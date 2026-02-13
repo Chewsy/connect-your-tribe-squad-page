@@ -1,13 +1,13 @@
 {% render 'partials/head.liquid', title: 'Squad page' %}
 
-{% comment %}
-  <h2>Students</h2>
+
+  {% comment %} <h2>Students</h2>
   <ul>
     {% for person in persons %}
       <li><a href="/student/{{ person.id }}">{{ person.name }}</a></li>
     {% endfor %}
-  </ul>
-{% endcomment %}
+  </ul> {% endcomment %}
+
     <link rel="stylesheet" href="/index.css">
 
 <main>
@@ -34,7 +34,7 @@
         <span class="onderwerp">Lengte (in centimeter)</span>
     <div class="filter">
 
-<select name="pets" id="pet-select">
+<select name="lengte" id="lengte">
   <option value="">Selecteer een lengte</option>
   <option value="lengte1">150-160</option>
   <option value="lengte2">160-170</option>
@@ -42,6 +42,15 @@
   <option value="lengte4">180-190</option>
   <option value="lengte5">190-200</option>
 </select>
+    </div>
+
+    <div id="studentenLijst">
+<p>Omdat de filter nog niet werkt, hierbij de lijst van studenten om op te klikken.</p>
+  <ul>
+    {% for person in persons %}
+      <li><a href="/student/{{ person.id }}">{{ person.name }}</a></li>
+    {% endfor %}
+  </ul>
     </div>
 
     </div>

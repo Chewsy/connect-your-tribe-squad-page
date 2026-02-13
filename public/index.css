@@ -22,7 +22,7 @@ body {
 
 main {
     width: 500px;
-    height: 90%;
+    height: max-content;
     padding: 20px;
     background-image: url("assets/cardboard.jpg");
     color: rgb(35, 35, 35);
@@ -53,4 +53,14 @@ main {
         padding-bottom: 20px;
         margin-bottom: 20px;
     }
+}
+
+#studentenLijst ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 10px;
+
+  & li{
+    font-size: 12px;
+  }
 }
