@@ -1,10 +1,51 @@
 {% render 'partials/head.liquid', title: 'Squad page' %}
 
-<h2>Students</h2>
-<ul>
-  {% for person in persons %}
-    <li><a href="/student/{{ person.id }}">{{ person.name }}</a></li>
-  {% endfor %}
-</ul>
+{% comment %}
+  <h2>Students</h2>
+  <ul>
+    {% for person in persons %}
+      <li><a href="/student/{{ person.id }}">{{ person.name }}</a></li>
+    {% endfor %}
+  </ul>
+{% endcomment %}
+    <link rel="stylesheet" href="/index.css">
+
+<main>
+  <h1>FDND Files</h1>
+
+  <div class="fysiekeFilters">
+    <span class="categorie">Fysieke kenmerken</span>
+
+    <span class="onderwerp">Haarkleur</span>
+    <div class="filter">
+      <input type="checkbox" id="hairColor" name="hairColor">
+      <label for="bruin">Bruin</label>
+
+      <input type="checkbox" id="hairColor" name="hairColor">
+      <label for="zwart">Zwart</label>
+
+      <input type="checkbox" id="hairColor" name="hairColor">
+      <label for="blond">Blond</label>
+
+      <input type="checkbox" id="hairColor" name="hairColor">
+      <label for="overig">Overig</label>
+    </div>
+
+        <span class="onderwerp">Lengte (in centimeter)</span>
+    <div class="filter">
+
+<select name="pets" id="pet-select">
+  <option value="">Selecteer een lengte</option>
+  <option value="lengte1">150-160</option>
+  <option value="lengte2">160-170</option>
+  <option value="lengte3">170-180</option>
+  <option value="lengte4">180-190</option>
+  <option value="lengte5">190-200</option>
+</select>
+    </div>
+
+    </div>
+  </div>
+</main>
 
 {% render 'partials/foot.liquid', squads: squads %}

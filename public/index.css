@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("assets/backg_index.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 40px;
+}
+
+main {
+    width: 500px;
+    height: 90%;
+    padding: 20px;
+    background-image: url("assets/cardboard.jpg");
+    color: rgb(35, 35, 35);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+    & h1{
+        border-bottom: 3px solid rgb(35, 35, 35);
+    }
+}
+
+.fysiekeFilters {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    & .categorie {
+        text-decoration: underline;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+
+    & .onderwerp {
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    & .filter{
+        border-bottom: 1px solid rgb(35, 35, 35);
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+}

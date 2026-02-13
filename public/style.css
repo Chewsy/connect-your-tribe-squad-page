@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  flex-flow: row wrap;
+  gap: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("assets/backg.png");
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  padding: 40px;
+}
+
+#Mainevidence {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 250px;
+  background-color: #bfad8d;
+  color: rgb(35, 35, 35);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+  position: relative;
+
+  & img {
+    outline: 2px solid rgb(35, 35, 35);
+    outline-offset: 4px;
+    margin-bottom: 10px;
+
+    filter: grayscale(61%);
+    -webkit-filter: grayscale(61%);
+    -moz-filter: grayscale(61%);
+
+  }
+
+  .pin {
+    width: 25px;
+    height: 25px;
+    background-color: #ea0000;
+    border-radius: 100px;
+    border: 2px solid rgb(120, 0, 0);
+    position: absolute;
+    z-index: 1;
+    top: -10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
+    & .pinTop {
+      width: 15px;
+      height: 15px;
+      background-color: #b70000;
+      border-radius: 100px;
+      border: 1px solid rgb(120, 0, 0);
+    }
+  }
+}
+
+.evidence {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  height: auto;
+  padding: 20px;
+  background-color: #bfad8d;
+  color: rgb(35, 35, 35);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+  position: relative;
+
+  & p {
+    text-align: center;
+    width: 60%;
+    font-size: 16px;
+  }
+
+  & .birthdate {
+    font-weight: 700;
+    width: max-content;
+  }
+
+  & img {
+    outline: 2px solid rgb(35, 35, 35);
+    outline-offset: 4px;
+    margin-bottom: 10px;
+
+    filter: grayscale(61%);
+    -webkit-filter: grayscale(61%);
+    -moz-filter: grayscale(61%);
+
+  }
+
+  .pin {
+    width: 25px;
+    height: 25px;
+    background-color: #ea0000;
+    border-radius: 100px;
+    border: 2px solid rgb(120, 0, 0);
+    position: absolute;
+    z-index: 1;
+    top: -10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
+    & .pinTop {
+      width: 15px;
+      height: 15px;
+      background-color: #b70000;
+      border-radius: 100px;
+      border: 1px solid rgb(120, 0, 0);
+    }
+  }
+}

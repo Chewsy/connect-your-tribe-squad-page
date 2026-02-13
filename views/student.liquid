@@ -1,5 +1,55 @@
-{% render 'partials/head.liquid', title: person.name %}
+{% render 'partials/head.liquid' %}
 
-<a href="/">Back</a>
+{% comment %} <a href="/">Back</a> {% endcomment %}
 
-{% render 'partials/foot.liquid', squads: squads %}
+<div id="Mainevidence" draggable="true">
+  <div class="pin">
+    <div class="pinTop"></div>
+  </div>
+  <img src="https://fdnd.directus.app/assets/{{ person.mugshot }}?width=200" alt="Profile picture">
+  <h1>{{ person.name | upcase }}</h1>
+</div>
+
+<div class="evidence">
+  <div class="pin">
+    <div class="pinTop"></div>
+  </div>
+  <p>{{ person.bio }}</p>
+</div>
+
+<div class="evidence">
+  <div class="pin">
+    <div class="pinTop"></div>
+  </div>
+  <p>{{ person.residency }}</p>
+</div>
+
+<div class="evidence">
+  <div class="pin">
+    <div class="pinTop"></div>
+  </div>
+  <p class="birthdate">{{ person.birthdate }}</p>
+</div>
+
+<div class="evidence">
+  <div class="pin">
+    <div class="pinTop"></div>
+  </div>
+  <p class="birthdate">{{ person.fav_animal }}</p>
+</div>
+
+<div class="evidence">
+  <div class="pin">
+    <div class="pinTop"></div>
+  </div>
+  <p class="birthdate">{{ person.fav_hobby }}</p>
+</div>
+
+<div class="evidence">
+  <div class="pin">
+    <div class="pinTop"></div>
+  </div>
+  <p class="birthdate">{{ person.fav_game }}</p>
+</div>
+
+{% render 'partials/foot.liquid' %}
