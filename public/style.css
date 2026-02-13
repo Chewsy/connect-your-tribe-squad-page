@@ -17,6 +17,7 @@ body {
   background-attachment: fixed;
   background-size: 100% 100%;
   padding: 40px;
+  align-items: start;
 }
 
 #Mainevidence {
